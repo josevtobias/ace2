@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="games.ruiz.control_universal_app.Pincipal"
+    android:background="@drawable/fondo">
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/btnAC"
+        android:background="@drawable/ac" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/btnPorton"
+        android:background="@drawable/porton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/btnLuz"
+        android:background="@drawable/luz"
+        android:layout_alignTop="@+id/btnJardin"
+        android:layout_toRightOf="@+id/btnJardin"
+        android:layout_toEndOf="@+id/btnJardin"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp" />
+
+    <ImageButton
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/btnJardin"
+        android:background="@drawable/jardin"
+        android:layout_above="@+id/btnIncendio"
+        android:layout_alignLeft="@+id/btnIncendio"
+        android:layout_alignStart="@+id/btnIncendio" />
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/btnAlarma"
+        android:background="@drawable/alarma"
+        android:layout_alignTop="@+id/btnIncendio"
+        android:layout_toLeftOf="@+id/btnIncendio"
+        android:layout_toStartOf="@+id/btnIncendio" />
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/btnIncendio"
+        android:background="@drawable/incendio"
+        android:layout_below="@+id/btnAC"
+        android:layout_toRightOf="@+id/btnAC"
+        android:layout_toEndOf="@+id/btnAC"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp" />
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/btnFuera"
+        android:background="@drawable/fuera"
+        android:layout_alignBottom="@+id/btnIncendio"
+        android:layout_alignRight="@+id/btnPorton"
+        android:layout_alignEnd="@+id/btnPorton" />
+</RelativeLayout>
